@@ -1,0 +1,2 @@
+-keep class com.vaultmind.** { *; }
+-keep class dagger.hilt.** { *; }
