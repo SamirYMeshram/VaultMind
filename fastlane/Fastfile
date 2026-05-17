@@ -1,0 +1,23 @@
+default_platform(:android)
+
+platform :android do
+  desc "Run local quality checks"
+  lane :quality do
+    gradle(task: "ktlintCheck")
+    gradle(task: "detekt")
+    gradle(task: "lintDebug")
+    gradle(task: "testDebugUnitTest")
+  end
+
+  desc "Build release AAB"
+  lane :build_release do
+    gradle(task: "clean bundleRelease")
+  end
+
+  desc "Upload to internal testing track after signing and Play credentials are configured"
+  lane :internal do
+    quality
+    build_release
+    upload_to_play_store(track: "internal", aab: "app/build/outputs/bundle/release/app-release.aab")
+  end
+end

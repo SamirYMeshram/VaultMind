@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "vaultmind-placeholder",
+    "storage_bucket": "vaultmind-placeholder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:placeholderrelease",
+        "android_client_info": {
+          "package_name": "com.vaultmind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "REPLACE_WITH_REAL_FIREBASE_WEB_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:placeholderdebug",
+        "android_client_info": {
+          "package_name": "com.vaultmind.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "REPLACE_WITH_REAL_FIREBASE_WEB_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

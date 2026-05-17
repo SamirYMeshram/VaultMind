@@ -1,0 +1,1 @@
+<data-extraction-rules><cloud-backup><exclude domain="database" path="vaultmind.db" /></cloud-backup><device-transfer><exclude domain="database" path="vaultmind.db" /></device-transfer></data-extraction-rules>
